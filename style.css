@@ -400,7 +400,7 @@ section button{
     width: clamp(4rem, 15vw, 5rem);
     background-color: #0d1117d2;
     border-radius: 50%;
-    background-image: url(./Assets/Arrow\ Right\ Up.svg);
+    background-image: url(./Assets/arrow_right_up.svg);
     background-size: 1.8em;
     background-position: center center;
     background-repeat: no-repeat;
@@ -519,6 +519,9 @@ section button{
     color: white;
     padding: .8rem;
     background-color: var(--secondary-color);
+}
+#bot-field {
+    display: none;
 }
 @media only screen and (max-width: 1900px) {
     .container {
