@@ -63,20 +63,42 @@ clientTestimonial.textContent = reviews[client].testimonial;
 clientName.textContent = reviews[client].client;
 
 //Hamburger Menu Open
-const hamburgerBtn = document.getElementById('hamburger-btn');
-const navList = document.querySelector('.nav-list');
+/* const navList = document.querySelector('.nav-list');
 let counter = 0;
 
-hamburgerBtn.addEventListener('click', ()=> {
-    const tl = gsap.timeline({});
-
-    tl.to(navList, {
-        autoAlpha: 1, 
-        display:'flex'
-    })
-    tl.from('.nav-list a', { 
-        opacity: 0,
-        stagger: .1,
-        delay: -.5,
-    })    
+let navTl = gsap.timeline({ paused: false });
+navTl.to(navList, {
+    autoAlpha: 1, 
+    display:'flex'
 })
+navTl.from('.nav-list a', { 
+    opacity: 0,
+    stagger: .05,
+    delay: -.5,
+    ease: "Power3.easeOut",
+    y: -50,
+    zindex: -1
+})    
+
+document.addEventListener('click', (e)=> {
+    if(e.target.id == 'hamburger-btn'){
+        if(!counter){
+            navTl.timeScale(1);
+            navTl.play();   
+            counter++;
+        } else {
+            navTl.timeScale(1.5);
+            navTl.reverse();
+            counter = 0;
+        }
+    } else {
+        navTl.timeScale(1.5);
+        navTl.reverse();
+        counter = 0;
+    }
+}) */
+
+    
+
+
+
