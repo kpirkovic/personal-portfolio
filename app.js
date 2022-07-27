@@ -49,6 +49,7 @@ const reviews = [
     }
 ]
 
+//Auto Testimonials on Start    
 const mobileClientImage = document.querySelector('.laptop-wraper-mobile img');
 const clientTestimonial = document.querySelector('.notification');
 const clientName = document.querySelector('.client-name');
@@ -61,3 +62,21 @@ desktopImg.src = reviews[client].clientImg;
 clientTestimonial.textContent = reviews[client].testimonial;
 clientName.textContent = reviews[client].client;
 
+//Hamburger Menu Open
+const hamburgerBtn = document.getElementById('hamburger-btn');
+const navList = document.querySelector('.nav-list');
+let counter = 0;
+
+hamburgerBtn.addEventListener('click', ()=> {
+    const tl = gsap.timeline({});
+
+    tl.to(navList, {
+        autoAlpha: 1, 
+        display:'flex'
+    })
+    tl.from('.nav-list a', { 
+        opacity: 0,
+        stagger: .1,
+        delay: -.5,
+    })    
+})

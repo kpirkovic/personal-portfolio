@@ -97,6 +97,23 @@ nav {
     justify-content: space-between;
     width: 100%;
 }
+#hamburger-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 3.6rem;
+    height: 100%;
+    border: none;
+    border-inline-start: 1px solid var(--code-white);
+    background-color: transparent;
+}
+#hamburger-btn span{
+    display: block;
+    width: 60%;
+    height: 1px;
+    background-color: white;
+}
 .nav-list {
     height: 100%;
     display: flex;
@@ -568,11 +585,6 @@ section button{
     .wraper {
         display: block;
     }
-    #home header {
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-    }
     .anim-wraper-mobile {
         align-self: flex-end;
     }
@@ -593,9 +605,18 @@ section button{
         width: 100%;
     }
     .nav-list a {
-        text-align: center;
-        min-height: 3rem;
         background-color: var(--main-color);
+    }
+    .nav-list li {
+        padding-block: 1rem;
+    }
+    .nav-link {
+        box-shadow: none;
+        border: 1px solid var(--lines-color);
+    }
+    .nav-link.active {
+        box-shadow: none;
+        border-bottom: 2px solid var(--secondary-color);
     }
     .hamburger-menu {
         display: flex;
