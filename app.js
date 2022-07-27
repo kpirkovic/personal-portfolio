@@ -96,8 +96,8 @@ document.addEventListener('click', (e)=> {
         navTl.reverse();
         counter = 0;
     }
-})
- */
+}) */
+
     
 
 
