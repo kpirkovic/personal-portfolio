@@ -23,8 +23,11 @@
                 </ul>
                 <span></span>
             </div>
-            <ul class="nav-list">
+            <div class="hamburger-menu">
                 <a class="logo-mobile" href="#"><img src="./Assets/Logo.svg" alt="Pirko Creative Logo"></a>
+                <button><img src="" alt=""></button>
+            </div>
+            <ul class="nav-list">
                 <a href="#home"><li class="home nav-link">Home.html</li></a>
                 <a href="#testimonials"><li class="testimonials nav-link">Testimonials.html</li></a>
                 <a href="#portfolio"><li class="portfolio nav-link">Portfolio.html</li></a>
@@ -149,9 +152,9 @@
                         <h2>Let’s Make an <br> Impact Together</h2>
                         <p class="max-45ch">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem nulla in impedit quas nihil impedit!</p>
                     </div>
-                    <form class="contact-form" name="contact" netlify>
-                       <input placeholder="Your Name" type="text">
-                       <input placeholder="Your Email" type="email">
+                    <form class="contact-form" name="contact" method="POST" data-netlify="true" onsubmit="submit">
+                       <input name="Name" placeholder="Your Name" type="text">
+                       <input name="Email" placeholder="Your Email" type="email">
                        <select name="project-type" id="project-type">
                         <option selected disabled>Your Project Requirements</option>
                         <option value="saab">I need a Website Design</option>
@@ -164,7 +167,7 @@
                         <option value="mercedes">Between $3000$ - $5000</option>
                         <option value="audi">More than $5000+</option>
                       </select>
-                      <textarea placeholder="Your Message..." class="span-col-2" name="" id="" rows="5"></textarea>
+                      <textarea name="Message" placeholder="Your Message..." class="span-col-2" name="" id="" rows="5"></textarea>
                       <input id="submit" type="submit" value="Send">
                     </form>
                 </div>

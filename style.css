@@ -92,6 +92,11 @@ nav {
     font-size: .9rem;
     z-index: 999;
 }
+.hamburger-menu {
+    display: none;
+    justify-content: space-between;
+    width: 100%;
+}
 .nav-list {
     height: 100%;
     display: flex;
@@ -575,6 +580,22 @@ section button{
     .client-name {
         bottom: 45%;
         left: 55%;
+    }
+    .nav-list {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0%;
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-list a {
+        text-align: center;
+        min-height: 3rem;
+        background-color: var(--main-color);
+    }
+    .hamburger-menu {
+        display: flex;
     }
 }
 @media only screen and (max-width: 850px) {
