@@ -66,7 +66,7 @@ clientName.textContent = reviews[client].client;
 /* const navList = document.querySelector('.nav-list');
 let counter = 0;
 
-let navTl = gsap.timeline({ paused: false });
+let navTl = gsap.timeline({ paused: true });
 navTl.to(navList, {
     autoAlpha: 1, 
     display:'flex'
@@ -96,8 +96,8 @@ document.addEventListener('click', (e)=> {
         navTl.reverse();
         counter = 0;
     }
-}) */
-
+})
+ */
     
 
 

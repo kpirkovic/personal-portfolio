@@ -110,12 +110,21 @@ nav {
     border-inline-start: 1px solid var(--code-white);
     background-color: transparent;
     cursor: pointer;
+    padding-inline: .75rem;
 }
 #hamburger-btn span{
     display: block;
-    width: 60%;
+    width: 100%;
     height: 1px;
     background-color: white;
+}
+#hamburger-btn span:nth-child(1){
+    width: 60%;
+    align-self: flex-start;
+}
+#hamburger-btn span:nth-child(3){
+    width: 60%;
+    align-self: flex-end;
 }
 .nav-list {
     display: flex;
@@ -186,7 +195,7 @@ main {
     margin-inline-start: 6rem;
 }
 h1 {
-    font-size: clamp(2.5rem, 30vw, 3.8rem);
+    font-size: clamp(2.5rem, 20vw, 3.8rem);
     font-weight: 600;
     line-height: 1.3;
 }
