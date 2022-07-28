@@ -101,13 +101,11 @@ document.addEventListener('click', (e)=> {
             navTl.play(); 
             isOpen = true;
         }
-    } else {
-        if(isOpen && isMobile) {
-            navTl.timeScale(1.8);
-            navTl.reverse();
-            isOpen = false;
-            }
-        }
+    } else if (isOpen && isMobile) {
+        navTl.timeScale(1.8);
+        navTl.reverse();
+    }
+    hamburgerNav();
 })
 
 window.addEventListener("resize", function (e) {
@@ -120,8 +118,8 @@ window.addEventListener("resize", function (e) {
         isOpen = false;
         isMobile = true;
     }
+    hamburgerNav();
 });
-
 
 
 

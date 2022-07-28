@@ -1,14 +1,17 @@
-gsap.to("#anim", {
-scrollTrigger: {
-    trigger: ".wraper",
-    start: "top top",
-    end: "30% top",
-    toggleActions: "play reverse none reset",
-    scrub: 1,
-},
-    scale: 0, 
-    opacity: 0, 
-});
+ScrollTrigger.matchMedia({
+	"(min-width: 1360px)": function() {
+    gsap.to("#anim", {
+    scrollTrigger: {
+        trigger: ".wraper",
+        start: "top top",
+        end: "30% top",
+        toggleActions: "play reverse none reset",
+        scrub: 1,
+    },
+        scale: 0, 
+        opacity: 0, 
+    });
+}})
 
 window.onload = function() {
 
@@ -18,37 +21,32 @@ textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='let
 const tl = gsap.timeline({});
 const letters = gsap.utils.toArray('.loader-logo .letter');
 
-tl.to(textWrapper, {
-    opacity: 1,
-    autoAlpha: 1,
-})
-letters.forEach(letters => {
-  tl.fromTo(letters, { 
-    opacity: 0,
-    y: 100,
-  },
-  {
-    y: 0,
-    opacity: 1,
-    ease: "back.out(1)",
-    delay: -.43,
-  })
-});
+if(window.matchMedia("(min-width: 850px)").matches) {
+    tl.to(textWrapper, {
+        opacity: 1,
+        autoAlpha: 1,
+    })
 
-tl.to(textWrapper, { 
-    opacity: 0,
-    ease: "Power2.easeOut",
-    delay: -.1,
-    duration: .7,
-})
+    letters.forEach(letters => {
+    tl.fromTo(letters, { 
+        opacity: 0,
+        y: 100,
+    },
+    {
+        y: 0,
+        opacity: 1,
+        ease: "back.out(1)",
+        delay: -.43,
+    })
+    });
 
-tl.to(textWrapper, {
-    delay: -5,
-    opacity: 0,
-    duration: .7,
-    ease: "Power2.easeOut",
-})
-
+    tl.to(textWrapper, { 
+        opacity: 0,
+        ease: "Power2.easeOut",
+        delay: -.1,
+        duration: .7,
+    })
+}
 tl.to(".loader", {
     opacity: -.2,
     ease: "Power2.easeOut",
@@ -73,7 +71,7 @@ tl.from("#home p, #home .main-btn, #home h1", {
     delay: -.75
 })
 
-tl.from(".anim-wraper .laptop-wraper , .anim-wraper video", {
+tl.from(".anim-wraper .laptop-wraper , .anim-wraper video, #anim-mobile, .anim-wraper-mobile img",  {
     opacity: 0,
     y: 50,
     ease: "Power2.easeOut",
@@ -128,18 +126,20 @@ for (let i = 0; i <= frameCount; i++) {
     img.src = currentFrame(i);
     images.push(img);
 }
-
-gsap.to(laptop, {
-    frame: frameCount - 1,
-    snap: "frame",
-    scrollTrigger: {
-        trigger: ".wraper",
-        start: "-15% top",
-        end: "70% top",
-        scrub: true,
-},
-    onUpdate: render 
-});
+ScrollTrigger.matchMedia({
+	"(min-width: 1360px)": function() {
+    gsap.to(laptop, {
+        frame: frameCount - 1,
+        snap: "frame",
+        scrollTrigger: {
+            trigger: ".wraper",
+            start: "-15% top",
+            end: "70% top",
+            scrub: true,
+    },
+        onUpdate: render 
+    });
+}})
 
 images[0].onload = render;
 

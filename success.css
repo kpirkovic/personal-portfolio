@@ -5,6 +5,7 @@ section {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    margin-inline: 1.5rem;
 }
 section p {
     margin-block-start: .7rem !important;
