@@ -505,6 +505,7 @@ section button{
 .accordion-heading {
     font-size: 1.1rem;
     font-weight: 500;
+    line-height: 1.5;
 }
 .faq-arrow {
     width: .5rem;
@@ -512,6 +513,7 @@ section button{
     transform: rotate(45deg);
     border-right: 2px solid white;
     border-bottom: 2px solid white;
+    margin-inline-start: 1rem;
     margin-block-end: .25rem;
     transition: transform 200ms ease;
 }
@@ -708,6 +710,10 @@ section button{
     nav {
         height: 3.3rem;
     }
+    .faq-section {
+        min-height: fit-content;
+        margin-block: 7rem;
+    }
 }
 @media only screen and (max-width: 768px) {
     .cb-mobile {
@@ -770,7 +776,7 @@ section button{
         width: 105%;
     }
     .notification {
-        top: -6rem;
+        top: -30%;
         left: 0%;
     }
     .main-btn {

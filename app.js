@@ -74,6 +74,7 @@ navTl.to(navList, {
     autoAlpha: 1, 
     display:'flex'
 })
+
 navTl.from('.nav-list a', { 
     opacity: 0,
     stagger: .05,
@@ -83,10 +84,16 @@ navTl.from('.nav-list a', {
     zindex: -1
 })    
 
+if(mql.matches) {
+    navTl.progress(0).reversed(true);
+    isOpen = false;
+    isMobile = true;
+}
+
 document.addEventListener('click', (e)=> {
     if(e.target.id == 'hamburger-btn' && isMobile){
         if(isOpen){
-            navTl.timeScale(1.5);
+            navTl.timeScale(1.8);
             navTl.reverse();
             isOpen = false;
         } else {
@@ -96,7 +103,7 @@ document.addEventListener('click', (e)=> {
         }
     } else {
         if(isOpen && isMobile) {
-            navTl.timeScale(1.5);
+            navTl.timeScale(1.8);
             navTl.reverse();
             isOpen = false;
             }
@@ -114,7 +121,6 @@ window.addEventListener("resize", function (e) {
         isMobile = true;
     }
 });
-
 
 
 
