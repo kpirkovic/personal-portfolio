@@ -195,7 +195,7 @@ main {
     margin-inline-start: 6rem;
 }
 h1 {
-    font-size: clamp(2.5rem, 20vw, 3.8rem);
+    font-size: clamp(2.8rem, 12vw, 3.8rem);
     font-weight: 600;
     line-height: 1.3;
 }
@@ -472,7 +472,7 @@ section button{
 .faq-head, .contact-head {
     margin: 0;
     width: 40%;
-    margin-inline-end: 1rem;
+    margin-inline-end: 2rem;
 }
 .accordion {
     width: 60%;
@@ -703,13 +703,7 @@ section button{
         left: 70%;
     }
     .loader-logo {
-        font-size: 2rem;
-    }
-    .mobile-h1 {
-        display: block;
-    }
-    .desktop-h1 {
-        display: none;
+        font-size: 2.5rem;
     }
     nav {
         height: 3.3rem;
@@ -782,6 +776,12 @@ section button{
     .main-btn {
         text-align: center;
         width: 100%;
+    }
+    .mobile-h1 {
+        display: block;
+    }
+    .desktop-h1 {
+        display: none;
     }
 }
 ::-webkit-scrollbar-thumb {

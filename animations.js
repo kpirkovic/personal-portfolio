@@ -10,14 +10,17 @@ scrollTrigger: {
     opacity: 0, 
 });
 
+window.onload = function() {
+
 const textWrapper = document.querySelector('.loader-logo');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 const tl = gsap.timeline({});
 const letters = gsap.utils.toArray('.loader-logo .letter');
+
 tl.to(textWrapper, {
-    opacity: 2,
-    autoAlpha: 1
+    opacity: 1,
+    autoAlpha: 1,
 })
 letters.forEach(letters => {
   tl.fromTo(letters, { 
@@ -78,6 +81,7 @@ tl.from(".anim-wraper .laptop-wraper , .anim-wraper video", {
     duration: .7,
     delay: -.75
 })
+}
 
 gsap.from(".notification, .client-name", {
 scrollTrigger: {
@@ -236,27 +240,47 @@ portfolioTl.from("#portfolio a", {
     delay: -.55
 });
 
-gsap.from(".faq-head h2, .faq-head p", {
-scrollTrigger: {
-    start: '-40%',
-    trigger: questionsSection,
-},
+const faqTl = gsap.timeline({
+    scrollTrigger: {
+        start: '-40%',
+        trigger: questionsSection,
+    }
+})
+faqTl.from(".faq-head h2, .faq-head p", {
     opacity: 0,
     ease: "Power2.easeOut",
     y: 50,
     stagger: .15,
     duration: .7
 });
+faqTl.from(".accordion", {
+    opacity: 0,
+    ease: "Power2.easeOut",
+    y: 50,
+    stagger: .15,
+    duration: .7,
+    delay: -.5,
+});
 
-gsap.from(".contact-head h2, .contact-head p", {
-scrollTrigger: {
-    start: '-90%',
-    trigger: contactSection,
-},
+const contactTl = gsap.timeline({
+    scrollTrigger: {
+        start: '-95%',
+        trigger: contactSection,
+    }
+})
+contactTl.from(".contact-head h2, .contact-head p", {
     opacity: 0,
     ease: "Power2.easeOut",
     y: 50,
     stagger: .15,
     duration: .7
+});
+contactTl.from(".contact-form", {
+    opacity: 0,
+    ease: "Power2.easeOut",
+    y: 50,
+    stagger: .15,
+    duration: .7,
+    delay: -.5,
 });
 

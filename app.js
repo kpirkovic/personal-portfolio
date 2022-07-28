@@ -63,10 +63,13 @@ clientTestimonial.textContent = reviews[client].testimonial;
 clientName.textContent = reviews[client].client;
 
 //Hamburger Menu Open
-/* const navList = document.querySelector('.nav-list');
-let counter = 0;
+const navList = document.querySelector('.nav-list');
+const mql = window.matchMedia("(max-width: 1360px)");
+let isOpen = false;
+let isMobile = false;
 
-let navTl = gsap.timeline({ paused: true });
+const navTl = gsap.timeline({});
+
 navTl.to(navList, {
     autoAlpha: 1, 
     display:'flex'
@@ -81,24 +84,41 @@ navTl.from('.nav-list a', {
 })    
 
 document.addEventListener('click', (e)=> {
-    if(e.target.id == 'hamburger-btn'){
-        if(!counter){
-            navTl.timeScale(1);
-            navTl.play();   
-            counter++;
-        } else {
+    if(e.target.id == 'hamburger-btn' && isMobile){
+        if(isOpen){
             navTl.timeScale(1.5);
             navTl.reverse();
-            counter = 0;
+            isOpen = false;
+        } else {
+            navTl.timeScale(1);
+            navTl.play(); 
+            isOpen = true;
         }
     } else {
-        navTl.timeScale(1.5);
-        navTl.reverse();
-        counter = 0;
-    }
-}) */
+        if(isOpen && isMobile) {
+            navTl.timeScale(1.5);
+            navTl.reverse();
+            isOpen = false;
+            }
+        }
+})
 
-    
+window.addEventListener("resize", function (e) {
+    if(e.target.innerWidth >= 1360) {
+        navTl.progress(1).play();
+        isOpen = true;
+        isMobile = false;
+    } else if (e.target.innerWidth <= 1360) {
+        navTl.progress(0).reversed(true);
+        isOpen = false;
+        isMobile = true;
+    }
+});
+
+
+
+
+
 
 
 
