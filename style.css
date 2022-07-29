@@ -697,6 +697,7 @@ section button{
     }
     .portfolio-section {
         margin-block-start: 0rem;
+        margin-block-end: 3rem;
     }
     .notification {
         left: 0%;
@@ -731,7 +732,7 @@ section button{
     .code-border {
         padding: 0 0 0 .75rem;
     }
-    #portfolio a {
+    .site {
         padding-inline-start: .7rem;
     }
     .hero-section {
@@ -748,10 +749,8 @@ section button{
     .portfolio-grid {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto;
-        padding-block-start: 3rem;
     }
     .portfolio-grid .main-btn {
-        padding-inline-start: 0;
         height: auto;
     }
     .portfolio-grid a {
@@ -775,7 +774,7 @@ section button{
         left: 60%;
     }
     .laptop-wraper-mobile{
-        margin-top: 10rem;
+        margin-top: 8.5rem;
     }
     .laptop-wraper-mobile img {
         width: 105%;
