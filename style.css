@@ -553,6 +553,7 @@ section button{
     cursor: pointer;
     color: white;
     padding: .8rem;
+    -webkit-padding: .8rem;
     background-color: var(--secondary-color);
 }
 #bot-field {
@@ -688,6 +689,7 @@ section button{
     }
     .contact-form input, .contact-form select, .contact-form textarea {
         padding: .7rem .8rem;
+        -webkit-padding: .7rem .8rem;
     }
     #submit {
         width: 100%;
