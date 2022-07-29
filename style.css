@@ -196,7 +196,7 @@ main {
     margin-inline-start: 6rem;
 }
 h1 {
-    font-size: clamp(2.6rem, 10vw, 3.8rem);
+    font-size: clamp(2.7rem, 11vw, 3.8rem);
     font-weight: 600;
     line-height: 1.3;
 }
@@ -274,6 +274,7 @@ section button{
 }
 .anim-wraper-mobile {
     display: none;
+    overflow: hidden;
     position: relative;
     width: 100%;
     margin-block-start: clamp(2rem, 50vw, 4rem);
@@ -563,9 +564,9 @@ section button{
 .mobile-br {
     display: none;
 }
-@media only screen and (max-width: 1900px) {
+@media only screen and (max-width: 1800px) {
     .container {
-        max-width: 1900px;
+        max-width: 1800px;
     }
 }
 @media only screen and (max-width: 1360px) {
@@ -777,7 +778,7 @@ section button{
         margin-top: 7.5rem;
     }
     .notification {
-        top: -22%;
+        top: -30%;
         left: 0%;
     }
     .main-btn {
