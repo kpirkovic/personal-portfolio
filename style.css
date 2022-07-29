@@ -738,6 +738,9 @@ section button{
         min-height: fit-content;
         margin-block: 7rem;
     }
+    .accordion-heading {
+        font-size: 1rem;
+    }
 }
 @media only screen and (max-width: 768px) {
     .cb-mobile {
