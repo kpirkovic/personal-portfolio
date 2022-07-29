@@ -546,10 +546,10 @@ section button{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    background-color: white !important;
     background-image: url('./Assets/arrow.svg');
     background-size: clamp(.5rem, 10vw, .75rem);
     color: grey !important;
-    background: white !important;
     background-repeat: no-repeat;
     background-position: 97% 47%;
 }
