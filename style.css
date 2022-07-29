@@ -314,7 +314,6 @@ section button{
 .laptop-wraper-mobile {
     position: relative;
     margin-block-start: 5rem;
-    margin-block-end: 2rem;
     display: none;
 }
 .laptop-wraper-mobile img{
@@ -771,13 +770,11 @@ section button{
     }
     .client-name {
         bottom: 35%;
-        left: 60%;
+        left: 50%;
+        width: 40%;
     }
     .laptop-wraper-mobile{
-        margin-top: 8.5rem;
-    }
-    .laptop-wraper-mobile img {
-        width: 105%;
+        margin-top: 7.5rem;
     }
     .notification {
         top: -22%;
