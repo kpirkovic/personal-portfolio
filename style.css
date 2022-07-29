@@ -530,15 +530,26 @@ section button{
     gap: .6rem;
 }
 .contact-form input, .contact-form select, .contact-form textarea {
+    position: relative;
     width: 100%;
     border: none;
     padding: .8rem;
-    -webkit-padding: .8rem;
     outline: none;
     border-radius: 2px;
     font-family: 'Poppins', sans-serif;
     font-size: .95rem;
-    -webkit-appearance: initial;
+}
+.contact-form select {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('./Assets/arrow.svg');
+    background-size: .75rem;
+    background-repeat: no-repeat;
+    background-position: 97% 47%;
 }
 .contact-form textarea {
     resize: none;
@@ -556,7 +567,6 @@ section button{
     color: white;
     padding: .8rem;
     background-color: var(--secondary-color);
-    -webkit-padding: .8rem;
     -webkit-appearance: initial;
 }
 #bot-field {
@@ -692,7 +702,6 @@ section button{
     }
     .contact-form input, .contact-form select, .contact-form textarea {
         padding: .7rem .8rem;
-        -webkit-padding: .7rem .8rem;
     }
     #submit {
         width: 100%;
@@ -737,7 +746,7 @@ section button{
         content: '';
     }
     .code-border {
-        padding: 0 0 0 .75rem;
+        padding: 0 0 0 .5rem;
     }
     .site {
         padding-inline-start: .7rem;
