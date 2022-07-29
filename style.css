@@ -53,6 +53,7 @@ body {
 }
 #home {
     scroll-margin-top: 50rem;
+    overflow: hidden;
 }
 #testimonials {
     scroll-margin-top: 5rem;
@@ -274,7 +275,6 @@ section button{
 }
 .anim-wraper-mobile {
     display: none;
-    overflow: hidden;
     position: relative;
     width: 100%;
     margin-block-start: clamp(2rem, 50vw, 4rem);
