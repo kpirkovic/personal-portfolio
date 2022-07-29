@@ -547,7 +547,8 @@ section button{
     -moz-appearance: none;
     appearance: none;
     background-image: url('./Assets/arrow.svg');
-    background-size: .75rem;
+    background-size: clamp(.5rem, 10vw, .75rem);
+    color: black !important;
     background-repeat: no-repeat;
     background-position: 97% 47%;
 }
