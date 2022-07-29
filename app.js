@@ -70,7 +70,11 @@ let isMobile = false;
 
 const navTl = gsap.timeline({});
 
-navTl.to(navList, {
+navTl.fromTo(navList, {
+    autoAlpha: 0, 
+    display:'none'
+},
+{
     autoAlpha: 1, 
     display:'flex'
 })
