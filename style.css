@@ -815,6 +815,9 @@ section button{
     .site::before {
         background-size: 1.4em;
     }
+    .container {
+        padding-inline: .5rem;
+    }
 }
 ::-webkit-scrollbar-thumb {
     background-color: var(--scrollbar-color);
