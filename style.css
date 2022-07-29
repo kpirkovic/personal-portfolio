@@ -548,7 +548,8 @@ section button{
     appearance: none;
     background-image: url('./Assets/arrow.svg');
     background-size: clamp(.5rem, 10vw, .75rem);
-    color: black !important;
+    color: grey !important;
+    background: white !important;
     background-repeat: no-repeat;
     background-position: 97% 47%;
 }
