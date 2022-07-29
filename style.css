@@ -125,6 +125,7 @@ nav {
     align-self: flex-start;
 }
 #hamburger-btn span:nth-child(3){
+    transform-origin: left;
     width: 60%;
     align-self: flex-end;
 }
