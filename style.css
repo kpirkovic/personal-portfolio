@@ -297,7 +297,7 @@ section button{
     filter: contrast(1.2);
     position: absolute;
     top: -20%;
-    left: 20%;
+    left: 22%;
     width: 50%;
 }
 #laptop {
@@ -757,12 +757,10 @@ section button{
         margin-block-end: 2rem;
     }
     .anim-wraper-mobile {
-        margin-block-start: 7rem;
-        
+        margin-block-start: 7rem;  
     }
     .anim-wraper-mobile img {
         width: 100%;
-        transform: translateX(-5%);
     }
     .portfolio-grid {
         grid-template-columns: repeat(1, 1fr);
