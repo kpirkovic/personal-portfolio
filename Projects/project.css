@@ -210,7 +210,7 @@ section #head {
 @media only screen and (max-width: 1300px)  {
     .three-cl-grid {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(1, auto);
+        grid-template-rows: repeat(1, auto-fill);
     }
     .three-cl-grid #head {
         grid-column: span 2;
@@ -271,7 +271,12 @@ section #head {
     .unique-features-section {
         min-height: 60vh;
     }
+    .colors {
+        width: 100%;
+    }
     .colors *{ 
-        aspect-ratio: 2/1;
+        width: 100%;
+        height: 2rem;
+        aspect-ratio: 0;
     }
 }
