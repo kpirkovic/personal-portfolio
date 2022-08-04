@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="hamburger.css">
+    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
     <title>Pirko Creative</title>
 </head>
     <body>
@@ -14,9 +14,9 @@
         </div>
         <nav>
             <div class="side-bar">
-                <a class="logo" href="https://github.com/kpirkovic"><img src="./Assets/Logo.svg" alt="Pirko Creative Logo"></a>
+                <a class="logo" href="index.html"><img src="./Assets/Logo.svg" alt="Pirko Creative Logo"></a>
                 <ul>
-                    <a class="social-link" href="#" target="_blank"><li><img src="./Assets/Github.svg" alt="Github Social Icon"></li></a>
+                    <a class="social-link" href="https://github.com/kpirkovic#" target="_blank"><li><img src="./Assets/Github.svg" alt="Github Social Icon"></li></a>
                     <a class="social-link" href="https://www.linkedin.com/in/kristijan-pirkovic" target="_blank"><li><img src="./Assets/Linkedin.svg" alt="Linkedin Social Icon"></li></a>
                     <a class="social-link" href="https://www.instagram.com/pirkocreative" target="_blank"><li><img src="./Assets/Instagram.svg" alt="Instagram Social Icon"></li></a>
                     <a class="social-link" href="#" target="_blank"><li><img src="./Assets/Behance.svg" alt="Behance Social Icon"></li></a>
@@ -42,7 +42,7 @@
         </nav>
         <main class="container code-border" codeStart="<body>">
             <div class="wraper">
-                <div class="sections-wraper">
+                <div class="sections-wrapper">
                     <section id="home" class="hero-section">
                         <header class="code-border cb-mobile content-wraper" codeStart="<header>" codeEnd="</header>">
                             <h1 class="desktop-h1">Helping Brands <br><span class="text-blue">Build Unforgettable </span> <br> User Experiences!</h1>
@@ -94,17 +94,17 @@
                     </div>
                 </div>
             </div>
-            <section id="portfolio" class="portfolio-section portfolio-grid">
+            <section id="portfolio" class="portfolio-section portfolio-grid p-end-two">
                 <div id="portfolio-head" class="code-border cb-mobile span-row-2" codeStart="<section>" codeEnd="</section>">
                     <h2>My Work</h2>
                     <p class="max-90">Here is a sneak peek at some of my most recent projects that I've been working on.</p>
                     <a href="#contact" role="button" class="main-btn">Hire Me</a>
                 </div>
-                <a class="site span-row-3"><img src="./Assets/Portfolio/Konimex.png" class="img-cover" alt="Site Image"></a>
-                <a class="site span-row-4"><img src="./Assets/Portfolio/Example.png" class="img-cover" alt="Site Image"></a>
-                <a class="site span-row-4"><img src="./Assets/Portfolio/Maria.png" class="img-cover" alt="Site Image"></a>
-                <a class="site span-row-3"><img src="./Assets/Portfolio/Dizajn.mk.png" class="img-cover" alt="Site Image"></a>
-                <a class="site span-row-2"><img src="./Assets/Portfolio/Rent.mk.png" class="img-cover" alt="Site Image"></a>
+                <a href="./Projects/project.html" class="site span-row-3"><img src="./Assets/Portfolio/Konimex.png" class="img-cover" alt="Site Image"></a>
+                <a href="./Projects/project.html" class="site span-row-4"><img src="./Assets/Portfolio/Example.png" class="img-cover" alt="Site Image"></a>
+                <a href="./Projects/project.html" class="site span-row-4"><img src="./Assets/Portfolio/Maria.png" class="img-cover" alt="Site Image"></a>
+                <a href="./Projects/project.html" class="site span-row-3"><img src="./Assets/Portfolio/Dizajn.mk.png" class="img-cover" alt="Site Image"></a>
+                <a href="./Projects/project.html" class="site span-row-2"><img src="./Assets/Portfolio/Rent.mk.png" class="img-cover" alt="Site Image"></a>
             </section>
             <section id="questions" class="faq-section">
                 <div class="code-border cb-mobile content-wraper faq-wrapper" codeStart="<section>" codeEnd="</section>">
@@ -186,6 +186,8 @@
     </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js" integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
     <script src="animations.js"></script>
+    <script src="burger-anim.js"></script>
     <script src="app.js"></script>
 </html>
