@@ -50,20 +50,22 @@ const reviews = [
 ]
 
 //Auto Testimonials on Start    
-const mobileClientImage = document.querySelector('.laptop-wraper-mobile img');
-const clientTestimonial = document.querySelector('.notification');
-const clientName = document.querySelector('.client-name');
-const desktopImg = document.querySelector('.client');
-
-let client = Math.floor(Math.random() * reviews.length);
-
-mobileClientImage.src = reviews[client].mobileImg;
-desktopImg.src = reviews[client].clientImg;
-clientTestimonial.textContent = reviews[client].testimonial;
-clientName.textContent = reviews[client].client;
+const testimonialImgDesktop = document.querySelector('.client img');
+const testimonialImgMobile = document.querySelector('.laptop-wraper-mobile img');
+const testimonialReview = document.querySelectorAll('.notification');
+const testimonialClient = document.querySelectorAll('.client-name');
 
 
+const randomNum = Math.round(Math.random() * reviews.length);
 
+testimonialImgDesktop.src = reviews[randomNum].clientImg;
+
+testimonialReview.forEach(e => {
+    e.textContent = reviews[randomNum].testimonial;
+})
+testimonialClient.forEach(e => {
+    e.textContent = reviews[randomNum].client;
+})
 
 
 

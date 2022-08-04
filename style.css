@@ -372,6 +372,7 @@ section button{
     left: clamp(30rem, 30vw, 35rem);
     bottom: 40%;
     border-radius: 4px;
+    max-width: 18ch;
     padding: .7rem 1.2rem;
     background-color: var(--lines-color);
     color: white;
