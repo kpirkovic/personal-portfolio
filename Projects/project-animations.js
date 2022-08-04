@@ -97,7 +97,7 @@ gsap.from(".style-content, .style-colors, .font-content", {
 });
 
 
-if(window.matchMedia("(min-width: 768ox)").matches) {
+if(window.matchMedia("(min-width: 850px)").matches) {
     VanillaTilt.init(document.querySelectorAll(".persona"), {
         max: 6,  
         glare: true,

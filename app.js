@@ -62,25 +62,7 @@ desktopImg.src = reviews[client].clientImg;
 clientTestimonial.textContent = reviews[client].testimonial;
 clientName.textContent = reviews[client].client;
 
-let cursor = new MouseFollower({
-    speed: 0.5,
-    skewing: 0,
-    hiddenState: '-hidden',
-    visible: false,
-});
 
-const portfolioSites = document.querySelectorAll('.site');
-
-portfolioSites.forEach(e => {
-    e.addEventListener('mouseenter', () => {
-        cursor.setText('View Project');
-        cursor.show();
-    });
-    e.addEventListener('mouseleave', () => {
-        cursor.removeText();
-        cursor.hide();
-    });
-})
 
 
 

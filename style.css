@@ -56,7 +56,7 @@ body {
     scroll-margin-block-start: 50rem;
 }
 #testimonials {
-    scroll-margin-top: 5rem;
+    scroll-margin-block-start: 5rem;
 }
 .logo {
     display: flex;
@@ -398,7 +398,7 @@ section button{
 }
 .portfolio-section {
     margin-block-start: 10rem;
-    scroll-margin-top: 5rem;
+    scroll-margin-block-start: 5rem;
 }
 .portfolio-section #portfolio-head {
     margin-block-end: 2rem;
@@ -654,8 +654,8 @@ section button{
     .hamburger-menu {
         display: flex;
     }
-    .portfolio-section, .testimonials-section , .hero-section {
-        scroll-margin-top: 2rem;
+    section {
+        scroll-margin-block-start: 2rem;
     }
     #testimonials {
         margin-block: 5rem;
@@ -739,6 +739,9 @@ section button{
     }
     .p-end-two {
         padding-inline-end: 1rem;
+    }
+    section {
+        scroll-margin-block-start: 0rem;
     }
 }
 @media only screen and (max-width: 768px) {
