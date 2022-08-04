@@ -128,7 +128,20 @@ section #head {
 }
 .showcase-laptop {
     position: relative;
+}
+.showcase-laptop img{
     width: 100%;
+}
+.showcase-laptop video{
+    position: absolute;
+    top: 4%;
+    left: 51%;
+    transform: translateX(-50%);
+    width: 84%;
+    height: 82.5%;
+    object-fit: cover;
+    border-radius: 10px 0 10px 0;
+    z-index: -1;
 }
 .showcase-phone {
     position: absolute;
@@ -137,6 +150,20 @@ section #head {
     transform: translateY(-50%);
     z-index: 2;
     width: clamp(5.5rem, 15vw, 14rem);
+}
+.showcase-phone img {
+    width: 100%;
+}
+.showcase-phone video {
+    position: absolute;
+    right: 50%;
+    top: 1%;
+    border-radius: 30px;
+    width: 95%;
+    height: 95%;
+    transform: translateX(50%);
+    object-fit: cover;
+    z-index: -1;
 }
 .hero-section header {
     display: flex;
@@ -234,7 +261,7 @@ section #head {
     .user-testing-section {
         padding-block-end: 5rem;
     }
-    .showcase-phone {
+    .showcase-phone{
         width: clamp(5.5rem, 20vw, 18rem);
     }
 }
@@ -289,11 +316,14 @@ section #head {
     .dprocess-blocks {
         min-height: 11rem;
     }
-    .showcase-phone {
+    .showcase-phone{
         top: 60%;
         right: -2%;
     }
     .hero-section {
         min-height: 100vh;
+    }
+    .showcase-laptop video{
+        width: 84%;
     }
 }
