@@ -660,6 +660,9 @@ section button{
     #testimonials {
         margin-block: 5rem;
     }
+    #home {
+        overflow: hidden;
+    }
 }
 @media only screen and (max-width: 850px) {
     .faq-wrapper, .contact-wrapper {

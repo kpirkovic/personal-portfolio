@@ -97,10 +97,12 @@ gsap.from(".style-content, .style-colors, .font-content", {
 });
 
 
-VanillaTilt.init(document.querySelectorAll(".persona"), {
-    max: 6,  
-    glare: true,
-    "max-glare": .05,
-    easing: "cubic-bezier(.17,.67,.83,.67)",
-    scale: .97
-});
+if(window.matchMedia("(min-width: 768ox)").matches) {
+    VanillaTilt.init(document.querySelectorAll(".persona"), {
+        max: 6,  
+        glare: true,
+        "max-glare": .05,
+        easing: "cubic-bezier(.17,.67,.83,.67)",
+        scale: .97
+    });
+}
