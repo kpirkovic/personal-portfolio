@@ -16,7 +16,7 @@ tl.from('.hero-content *, .hero-wrapper', {
 gsap.from(".dprocess-content, .dprocess-blocks", {
 scrollTrigger: {
     trigger: ".dprocess-section",
-    start: "-50%",
+    start: "-60%",
 },
     opacity: 0, 
     y: 60,
@@ -27,7 +27,7 @@ scrollTrigger: {
 gsap.from(".persona-section #head, .persona", {
 scrollTrigger: {
     trigger: ".persona-section",
-    start: "-55%",
+    start: "-65%",
 },
     opacity: 0, 
     y: 60,
@@ -39,7 +39,7 @@ scrollTrigger: {
 gsap.from("#portfolio-head *, .wireframe", {
 scrollTrigger: {
     trigger: ".portfolio-section",
-    start: "-55%",
+    start: "-65%",
 },
     opacity: 0, 
     y: 60,
@@ -51,7 +51,7 @@ scrollTrigger: {
 gsap.from(".unique-features-section #head h2, .unique-features-section #head li", {
 scrollTrigger: {
     trigger: ".unique-features-section",
-    start: "-60%",
+    start: "-70%",
 },
     opacity: 0, 
     y: 60,
@@ -63,7 +63,7 @@ scrollTrigger: {
 gsap.from(".user-testing-content, .user-testing-section .user-blocks", {
 scrollTrigger: {
     trigger: ".user-testing-section",
-    start: "-60%",
+    start: "-70%",
 },
     opacity: 0, 
     y: 60,
@@ -75,7 +75,7 @@ scrollTrigger: {
 gsap.from(".contact-head *, .contact-form", {
 scrollTrigger: {
     trigger: ".contact-section",
-    start: "-75%",
+    start: "-85%",
 },
     opacity: 0, 
     y: 60,
@@ -87,7 +87,7 @@ scrollTrigger: {
 gsap.from(".style-content, .style-colors, .font-content", {
     scrollTrigger: {
         trigger: ".style-section",
-        start: "-50%",
+        start: "-60%",
     },
         opacity: 0, 
         y: 60,
@@ -95,14 +95,3 @@ gsap.from(".style-content, .style-colors, .font-content", {
         ease: "Power2.easeOut",
         duration: .75,
 });
-
-
-if(window.matchMedia("(min-width: 850px)").matches) {
-    VanillaTilt.init(document.querySelectorAll(".persona"), {
-        max: 6,  
-        glare: true,
-        "max-glare": .05,
-        easing: "cubic-bezier(.17,.67,.83,.67)",
-        scale: .97
-    });
-}

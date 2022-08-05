@@ -51,7 +51,7 @@ const reviews = [
 
 //Auto Testimonials on Start    
 const testimonialImgDesktop = document.querySelector('.client img');
-const testimonialImgMobile = document.querySelector('.laptop-wraper-mobile img');
+const testimonialImgMobile = document.querySelector('.laptop-wrapper-mobile img');
 const testimonialReview = document.querySelectorAll('.notification');
 const testimonialClient = document.querySelectorAll('.client-name');
 

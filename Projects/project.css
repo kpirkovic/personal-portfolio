@@ -4,13 +4,15 @@
 .hero-section p {
     margin-block-start: .35rem;
 }
+.hero-section {
+    min-height: 60vh;
+}
 .persona {
     padding-block-start: 2rem;
-    padding-inline: 2rem;
+    padding-inline: clamp(1rem, 5vw, 2rem);
     outline: 1px solid var(--scrollbar-color);
     border-radius: 4px;
     background-color: #10151D;
-    cursor: pointer;
 }
 .persona-info {
     margin-block-end: 2rem;
@@ -48,15 +50,19 @@
 }
 .three-cl-grid {
     display: grid;
+    align-items: start;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
     gap: 1rem;
 }
-.unique-features-section, .final-design-section , .style-section{
+.unique-features-section, .final-design-section , .dprocess-section{
     display: flex;
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
+}
+.unique-features-section {
+    min-height: 90vh;
 }
 .user-testing-section .grid-auto-cols {
     margin-block-start: 3rem;
@@ -93,8 +99,6 @@ section #head {
     border-radius: 4px;
     padding: clamp(1.5rem, 5vw, 2rem);
     transition: background 300ms ease;
-}
-.dprocess-blocks:hover {
     background-color: #10151D;
 }
 .dprocess-blocks img{
@@ -187,9 +191,10 @@ section #head {
     cursor: pointer;
 }
 .style-section {
-    margin: 0;
+    min-height: 70vh;
+    margin-block-start: 5rem;
 }
-.style-section .content-wraper {
+.style-section .content-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -252,11 +257,8 @@ section #head {
         margin-block-start: 4rem;
         width: 100%;
     }
-    .hero-section {
-        min-height: 110vh;
-    }
     .dprocess-section {
-        margin-block-end: 7rem;
+        margin-block: 7rem;
     }
     .user-testing-section {
         padding-block-end: 5rem;
@@ -279,7 +281,7 @@ section #head {
         margin-block-start: 1rem;
         margin-block-end: 6rem;
     }
-    .style-section .content-wraper {
+    .style-section .content-wrapper {
         flex-direction: column;
         justify-content: flex-start;
     }
@@ -294,7 +296,7 @@ section #head {
 }
 @media only screen and (max-width: 768px)  {
     .hero-section {
-        min-height: 80vh;
+        min-height: fit-content;
     }
     .dprocress-blocks {
         min-height: 10.5rem;
@@ -314,14 +316,11 @@ section #head {
         margin-block-end: 3rem;
     }
     .dprocess-blocks {
-        min-height: 11rem;
+        min-height: 10.5rem;
     }
     .showcase-phone{
-        top: 60%;
+        top: 55%;
         right: -2%;
-    }
-    .hero-section {
-        min-height: 100vh;
     }
     .showcase-laptop video{
         width: 84%;

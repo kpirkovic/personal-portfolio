@@ -2,7 +2,7 @@ ScrollTrigger.matchMedia({
 	"(min-width: 1360px)": function() {
     gsap.to("#anim", {
     scrollTrigger: {
-        trigger: ".wraper",
+        trigger: ".wrapper",
         start: "top top",
         end: "30% top",
         toggleActions: "play reverse none reset",
@@ -92,7 +92,7 @@ tl.from("#home p, #home .main-btn, #home h1", {
     delay: -.75
 })
 
-tl.from(".anim-wraper .laptop-wraper , .anim-wraper video, #anim-mobile, .anim-wraper-mobile img",  {
+tl.from(".anim-wrapper .laptop-wrapper , .anim-wrapper video, #anim-mobile, .anim-wrapper-mobile img",  {
     opacity: 0,
     y: 50,
     ease: "Power2.easeOut",
@@ -104,7 +104,7 @@ tl.from(".anim-wraper .laptop-wraper , .anim-wraper video, #anim-mobile, .anim-w
 
 gsap.from(".notification, .client-name", {
 scrollTrigger: {
-    trigger: ".wraper",
+    trigger: ".wrapper",
     start: "35%",
     toggleActions: "play reverse play reverse",
 },
@@ -117,7 +117,7 @@ scrollTrigger: {
 
 gsap.from(".client", {
 scrollTrigger: {
-    trigger: ".wraper",
+    trigger: ".wrapper",
     start: "20%",
     end: "40%",
     toggleActions: "play reverse play reverse",
@@ -153,7 +153,7 @@ ScrollTrigger.matchMedia({
         frame: frameCount - 1,
         snap: "frame",
         scrollTrigger: {
-            trigger: ".wraper",
+            trigger: ".wrapper",
             start: "-15% top",
             end: "70% top",
             scrub: true,
