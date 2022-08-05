@@ -239,47 +239,28 @@ scrollTrigger: {
     stagger: .15,
 });
 
-const portfolioTl = gsap.timeline({
+gsap.from("#portfolio-head *, .site", {
     scrollTrigger: {
-        start: '-40%',
         trigger: portfolioSection,
-    }
-})
-portfolioTl.from("#portfolio-head h2, #portfolio-head p, #portfolio-head button", {
-    opacity: 0,
-    ease: "Power2.easeOut",
-    y: 50,
-    stagger: .15,
-    duration: .7,
+        start: "-65%",
+    },
+        opacity: 0, 
+        y: 60,
+        stagger: .15,
+        ease: "Power2.easeOut",
+        duration: .75,
 });
-portfolioTl.from("#portfolio a", {
-    opacity: 0,
-    ease: "Power2.easeOut",
-    y: 50,
-    stagger: .15,
-    duration: 1,
-}, .25);
 
-const faqTl = gsap.timeline({
+gsap.from(".faq-head h2, .faq-head p, .accordion", {
     scrollTrigger: {
-        start: '-40%',
         trigger: questionsSection,
-    }
-})
-faqTl.from(".faq-head h2, .faq-head p", {
-    opacity: 0,
-    ease: "Power2.easeOut",
-    y: 50,
-    stagger: .15,
-    duration: .7
-});
-faqTl.from(".accordion", {
-    opacity: 0,
-    ease: "Power2.easeOut",
-    y: 50,
-    stagger: .15,
-    duration: .7,
-    delay: -.5,
+        start: "-45%",
+    },
+        opacity: 0, 
+        y: 60,
+        stagger: .15,
+        ease: "Power2.easeOut",
+        duration: .75,
 });
 
 gsap.from(".contact-head *, .contact-form", {

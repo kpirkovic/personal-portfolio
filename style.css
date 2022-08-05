@@ -282,6 +282,9 @@ section button{
 .content-wrapper {
     height: 50%;
 }
+.desktop-h1 {
+    white-space: nowrap;
+}
 .anim-wrapper {
     position: relative;
     width: 50%;

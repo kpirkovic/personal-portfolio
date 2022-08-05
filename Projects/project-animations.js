@@ -84,7 +84,7 @@ scrollTrigger: {
     duration: .75,
 });
 
-gsap.from(".style-content, .style-colors, .font-content", {
+gsap.from(".style-content, .style-colors, .font-wrapper", {
     scrollTrigger: {
         trigger: ".style-section",
         start: "-60%",
