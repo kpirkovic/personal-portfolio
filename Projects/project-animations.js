@@ -75,7 +75,7 @@ scrollTrigger: {
 gsap.from(".contact-head *, .contact-form", {
 scrollTrigger: {
     trigger: ".contact-section",
-    start: "-85%",
+    start: "-95%",
 },
     opacity: 0, 
     y: 60,
