@@ -744,7 +744,7 @@ section button{
     .p-end-two {
         padding-inline-end: 1rem;
     }
-    section {
+    section:not(.contact-section, .faq-section) {
         scroll-margin-block-start: 0rem;
     }
 }

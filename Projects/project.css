@@ -302,7 +302,7 @@ section #head {
         min-height: 10.5rem;
     }
     .unique-features-section {
-        min-height: 60vh;
+        min-height: 70vh;
     }
     .colors {
         width: 100%;
@@ -313,7 +313,7 @@ section #head {
         aspect-ratio: 0;
     }
     .style-section {
-        margin-block-end: 3rem;
+        margin-block-end: 5rem;
     }
     .dprocess-blocks {
         min-height: 10.5rem;
@@ -324,5 +324,8 @@ section #head {
     }
     .showcase-laptop video{
         width: 84%;
+    }
+    .persona-section #head {
+        margin-block-end: .6rem;
     }
 }
