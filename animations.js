@@ -134,7 +134,7 @@ scrollTrigger: {
 
     const frameCount = 70;
     const currentFrame = index => (
-    `/Assets/Laptop/laptop_${index}.png`
+    `/Assets/Laptop/laptop_${index}.webp`
 );
 
     const images = []
