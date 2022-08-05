@@ -150,7 +150,7 @@ section #head {
 .showcase-phone {
     position: absolute;
     right: 0%;
-    top: 45%;
+    top: 46%;
     transform: translateY(-50%);
     z-index: 2;
     width: clamp(5.5rem, 15vw, 14rem);
@@ -162,7 +162,7 @@ section #head {
     position: absolute;
     right: 50%;
     top: 1%;
-    border-radius: 30px;
+    border-radius: clamp(5px, 5vw, 30px);
     width: 95%;
     height: 95%;
     transform: translateX(50%);
