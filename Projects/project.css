@@ -328,4 +328,7 @@ section #head {
     .persona-section #head {
         margin-block-end: .6rem;
     }
+    .dp-num {
+        right: 7%;
+    }
 }

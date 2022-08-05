@@ -38,6 +38,7 @@ body {
     background-color: var(--main-color);
     z-index: 1200;
     font-family: 'Esticada Sans', sans-serif;
+    src: url(./Assets/logo-font.ttf), format('truetype');
     font-weight: 300;
     pointer-events: none;
 }
