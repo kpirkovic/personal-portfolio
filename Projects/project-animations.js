@@ -9,7 +9,7 @@ tl.from('.hero-content *, .hero-wrapper', {
     opacity: 0,
     ease: "Power2.easeOut",
     y: 50,
-    stagger: .15,
+    stagger: .1,
     duration: .75,
 }, .55)
 

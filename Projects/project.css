@@ -174,13 +174,16 @@ section #head {
     flex-direction: column;
 }
 .hero-content {
-    width: 30%;
+    width: 40%;
+}
+.hero-content h1{
+    margin-block-end: 1rem;
 }
 .hero-wrapper {
     position: absolute;
     right: 2.5%;
-    top: -30%;
-    width: 65%;
+    top: -25%;
+    width: 60%;
     height: fit-content;
 }
 .wireframe {
@@ -240,7 +243,7 @@ section #head {
 .c4 {
     background-color: cyan;
 }
-@media only screen and (max-width: 1300px)  {
+@media only screen and (max-width: 1360px)  {
     .three-cl-grid {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(1, auto-fill);
@@ -253,8 +256,9 @@ section #head {
     }
     .hero-wrapper {
         position: relative;
+        top: 0%;
         left: -2%;
-        margin-block-start: 4rem;
+        margin-block-start: 3rem;
         width: 100%;
     }
     .dprocess-section {
@@ -331,4 +335,7 @@ section #head {
     .dp-num {
         right: 7%;
     }
+}
+.nunito {
+    font-family: 'Nunito', sans-serif;
 }
