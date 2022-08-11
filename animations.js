@@ -124,7 +124,7 @@ scrollTrigger: {
     scrub: true
 },
     opacity: 0, 
-    rotationY: -40,
+    rotationY: -30,
     rotationZ: 10,
     scale: 0,
 });
@@ -166,7 +166,7 @@ images[0].onload = render;
 
 function render() {
     context.clearRect(0, 0, canvas.width, canvas.height);
-    context.drawImage(images[laptop.frame], -200, -150, (canvas.width * 1.6), (canvas.height * 1.3)); 
+    context.drawImage(images[laptop.frame], -230, -170, (canvas.width * 1.65), (canvas.height * 1.35)); 
 }
 
 //Navbar on scroll Activate

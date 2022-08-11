@@ -308,8 +308,9 @@ section button{
 #anim{
     filter: contrast(1.2);
     position: absolute;
-    top: calc(0% - 5.5rem);
-    left: 35%;
+    top: calc(0% - 4rem);
+    left: 30%;
+    width: 24rem;
 }
 #anim-mobile{
     filter: contrast(1.2);
@@ -320,7 +321,7 @@ section button{
 }
 #laptop {
     position: relative;
-    left: clamp(-10rem, 50vw, -20rem);
+    left: -14rem;
     top: 2.5rem;
     z-index: 5;
 }
@@ -360,7 +361,7 @@ section button{
 }
 .notification {
     position: absolute;
-    left: 0rem;
+    left: -2rem;
     top: 8%;
     border-radius: 4px;
     padding: .7rem 1.2rem;
@@ -373,8 +374,8 @@ section button{
 }
 .client-name {
     position: absolute;
-    left: clamp(30rem, 30vw, 35rem);
-    bottom: 40%;
+    left: clamp(26rem, 30vw, 30.5rem);
+    bottom: 39.5%;
     border-radius: 4px;
     max-width: 18ch;
     padding: .7rem 1.2rem;
@@ -387,8 +388,8 @@ section button{
 .client {
     position: absolute;
     perspective: 100px;
-    left: 25.5rem;
-    top: 40%;
+    left: 21rem;
+    top: 39%;
     transform: translate(-50%, -50%);
     border-radius: 2px;
     z-index: 8;
@@ -396,8 +397,9 @@ section button{
     z-index: 98;
 }
 .client img {
+    width: 25rem;
+    height: 15rem;
     object-fit: cover;
-    width: 23.5rem;
     transform: rotateX(1deg);
     z-index: -1;
 }
@@ -665,8 +667,10 @@ section button{
     #testimonials {
         margin-block: 5rem;
     }
-    #home {
-        overflow: hidden;
+    #anim-mobile{
+        width: 48%;
+        top: -28%;
+        left: 23%;
     }
 }
 @media only screen and (max-width: 850px) {
@@ -765,6 +769,7 @@ section button{
     }
     .hero-section {
         margin-block-end: 2rem;
+        overflow: hidden;
     }
     .anim-wrapper-mobile {
         margin-block-start: 7rem;  
@@ -792,8 +797,9 @@ section button{
         width: 100%;
     }
     #anim-mobile{
-        width: 90%;
-        top: -35%;
+        width: 68%;
+        top: -25%;
+        left: 32%;
     }
     .client-name {
         bottom: 35%;
