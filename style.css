@@ -33,8 +33,8 @@ body {
     position: fixed;
     top: 0%;
     left: 0%;
-    width: 100vw;
-    min-height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: var(--main-color);
     z-index: 1200;
     font-family: 'Esticada Sans', sans-serif;
@@ -306,14 +306,14 @@ section button{
     max-width: 50%;
 }
 #anim{
-    filter: contrast(1.2);
+    filter: contrast(1.15);
     position: absolute;
     top: calc(0% - 4rem);
     left: 30%;
     width: 23rem;
 }
 #anim-mobile{
-    filter: contrast(1.2);
+    filter: contrast(1.15);
     position: absolute;
     top: -20%;
     left: 22%;
