@@ -326,7 +326,6 @@ section button{
     position: relative;
     left: -14rem;
     top: 2.5rem;
-    z-index: 5;
 }
 .laptop-wrapper {
     position: sticky;
