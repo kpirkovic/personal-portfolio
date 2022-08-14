@@ -170,7 +170,7 @@ images[0].onload = render;
 
 function render() {
     context.clearRect(0, 0, canvas.width, canvas.height);
-    context.drawImage(images[laptop.frame], -230, -170, (canvas.width * 1.65), (canvas.height * 1.35)); 
+    context.drawImage(images[laptop.frame], -230, -170, (canvas.width * 1.67), (canvas.height * 1.37)); 
 }
 
 //Navbar on scroll Activate

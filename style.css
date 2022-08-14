@@ -326,7 +326,7 @@ section button{
     position: relative;
     left: -14rem;
     top: 2.5rem;
-    -webkit-transform: translateZ(-10px)
+    -webkit-transform: translateZ(-10px);
 }
 .laptop-wrapper {
     position: sticky;
@@ -389,8 +389,8 @@ section button{
 .client {
     position: absolute;
     perspective: 100px;
-    left: 21rem;
-    top: 39%;
+    left: 21.8rem;
+    top: 40%;
     transform: translate3d(-50%, -50%, 0px);
     -webkit-transform: translate3d(-50%, -50%, 0px);
     border-radius: 2px;
