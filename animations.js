@@ -116,7 +116,6 @@ scrollTrigger: {
     stagger: .15,
     ease: "sine.out",
     duration: .35,
-    z: -30,
 });
 
 gsap.from(".client", {
@@ -129,7 +128,7 @@ scrollTrigger: {
 },
     opacity: 0, 
     rotationY: -30,
-    rotationZ: 10,
+    rotationZ: 8,
     scale: 0,
     z: 30,
 });
@@ -163,7 +162,7 @@ ScrollTrigger.matchMedia({
             end: "70% top",
             scrub: true,
     },
-        onUpdate: render 
+        onUpdate: render,
     });
 }})
 
