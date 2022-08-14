@@ -326,11 +326,11 @@ section button{
     position: relative;
     left: -14rem;
     top: 2.5rem;
-    -webkit-transform: translateZ(-10px);
+    -webkit-transform: translateZ(-15px);
 }
 .laptop-wrapper {
     position: sticky;
-    perspective: 50rem;
+    perspective: 60rem;
     top: 27%;
     left: -10rem;
 }
@@ -341,7 +341,6 @@ section button{
 }
 .laptop-wrapper-mobile img{
     width: 75%;
-    object-fit: cover;
 }
 .code-border {
     position: relative;
@@ -377,7 +376,7 @@ section button{
 .client-name {
     position: absolute;
     left: clamp(26rem, 30vw, 30.5rem);
-    bottom: 39.5%;
+    bottom: 38%;
     border-radius: 4px;
     max-width: 18ch;
     padding: .7rem 1.2rem;
@@ -393,15 +392,13 @@ section button{
     top: 40%;
     transform: translate3d(-50%, -50%, 0px);
     -webkit-transform: translate3d(-50%, -50%, 0px);
-    border-radius: 2px;
     z-index: 8;
     transform-origin: bottom;
 }
 .client img {
     width: 25rem;
-    height: 15rem;
-    object-fit: cover;
     transform: rotateX(1deg);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
 }
 .portfolio-section {
     margin-block-start: 10rem;

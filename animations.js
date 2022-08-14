@@ -127,10 +127,9 @@ scrollTrigger: {
     scrub: true
 },
     opacity: 0, 
-    rotationY: -30,
+    rotationY: -20,
     rotationZ: 8,
     scale: 0,
-    z: 30,
 });
 
     const canvas = document.getElementById("laptop");
