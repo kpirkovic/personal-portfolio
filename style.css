@@ -25,6 +25,10 @@ body {
     align-items: center;
     justify-content: center;
 }
+@font-face {
+    font-family: 'Esticada Sans', sans-serif;
+    src: url(./assets/logo-font.ttf), format('truetype');
+}
 .loader {
     display: flex;
     align-items: center;
@@ -38,7 +42,6 @@ body {
     background-color: var(--main-color);
     z-index: 1200;
     font-family: 'Esticada Sans', sans-serif;
-    src: url(./Assets/logo-font.ttf), format('truetype');
     font-weight: 300;
     pointer-events: none;
 }
@@ -370,6 +373,7 @@ section button{
     color: white;
     z-index: 10;
     transform-origin: right;
+    -webkit-transform: translateZ(0px);
 }
 .client-name {
     position: absolute;
@@ -382,13 +386,15 @@ section button{
     color: white;
     z-index: 10;
     transform-origin: left;
+    -webkit-transform: translateZ(0px);
 }
 .client {
     position: absolute;
     perspective: 100px;
     left: 21rem;
     top: 39%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0px);
+    -webkit-transform: translate3d(-50%, -50%, 0px);
     border-radius: 2px;
     z-index: 8;
     transform-origin: bottom;
