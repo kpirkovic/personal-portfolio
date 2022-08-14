@@ -116,7 +116,7 @@ scrollTrigger: {
     stagger: .15,
     ease: "sine.out",
     duration: .35,
-    z: 7,
+    z: -30,
 });
 
 gsap.from(".client", {
@@ -131,7 +131,7 @@ scrollTrigger: {
     rotationY: -30,
     rotationZ: 10,
     scale: 0,
-    z: 5,
+    z: 30,
 });
 
     const canvas = document.getElementById("laptop");
