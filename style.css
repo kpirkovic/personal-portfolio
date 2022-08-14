@@ -27,7 +27,7 @@ body {
 }
 @font-face {
     font-family: 'Esticada Sans', sans-serif;
-    src: url(./assets/logo-font.ttf), format('truetype');
+    src: url(./assets/logo-font.ttf) format('truetype');
 }
 .loader {
     display: flex;

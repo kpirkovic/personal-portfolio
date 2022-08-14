@@ -1,3 +1,7 @@
+gsap.config({
+    force3D: true,
+});
+
 ScrollTrigger.matchMedia({
 	"(min-width: 1360px)": function() {
     gsap.to("#anim", {
@@ -33,7 +37,6 @@ ScrollTrigger.matchMedia({
         });
     })
 }})
-
 window.onload = function() {
 
 const textWrapper = document.querySelector('.loader-logo');
