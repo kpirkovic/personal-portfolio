@@ -105,17 +105,25 @@ tl.from(".anim-wrapper .laptop-wrapper , .anim-wrapper video, #anim-mobile, .ani
 })
 }
 
-gsap.from(".notification, .client-name", {
-scrollTrigger: {
-    trigger: ".wrapper",
-    start: "35%",
-    toggleActions: "play reverse play reverse",
-},
+const clientsTestimonials = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".wrapper",
+        start: "35%",
+        toggleActions: "play reverse play reverse",
+    },
+});
+clientsTestimonials.fromTo(".notification, .client-name", {
     opacity: 0, 
-    y: 60,
+    y: 70,
+    z: 10,
+},
+{
+    opacity: 1, 
+    y: 0,
     stagger: .15,
-    ease: "sine.out",
-    duration: .35,
+    ease: "Power1.easeOut",
+    duration: .3,
+    z: 10
 });
 
 gsap.from(".client", {
