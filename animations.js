@@ -1,5 +1,5 @@
 gsap.config({
-    force3D: true,
+    force3D: false,
 });
 
 ScrollTrigger.matchMedia({

@@ -373,7 +373,6 @@ section button{
     color: white;
     z-index: 10;
     transform-origin: right;
-    -webkit-transform: translateZ(0px);
 }
 .client-name {
     position: absolute;
@@ -386,7 +385,6 @@ section button{
     color: white;
     z-index: 10;
     transform-origin: left;
-    -webkit-transform: translateZ(0px);
 }
 .client {
     position: absolute;
@@ -404,7 +402,6 @@ section button{
     height: 15rem;
     object-fit: cover;
     transform: rotateX(1deg);
-    -webkit-transform: rotateX(1deg);
 }
 .portfolio-section {
     margin-block-start: 10rem;
