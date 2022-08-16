@@ -320,7 +320,13 @@ section #head {
         margin-block-end: 5rem;
     }
     .dprocess-blocks {
-        min-height: 10.5rem;
+        min-height: 9.5rem;
+    }
+    .dprocess-blocks img{
+        width: 2.6rem;
+    }
+    .font-wrapper h2 {
+        font-size: 2.7rem;
     }
     .showcase-phone{
         top: 55%;
