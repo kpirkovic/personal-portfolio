@@ -121,8 +121,8 @@ clientsTestimonials.fromTo(".notification, .client-name", {
     opacity: 1, 
     y: 0,
     stagger: .15,
-    ease: "Power1.easeOut",
-    duration: .3,
+    ease: "sine.out",
+    duration: .35,
     z: 10
 });
 
@@ -177,7 +177,7 @@ images[0].onload = render;
 
 function render() {
     context.clearRect(0, 0, canvas.width, canvas.height);
-    context.drawImage(images[laptop.frame], -230, -170, (canvas.width * 1.67), (canvas.height * 1.37)); 
+    context.drawImage(images[laptop.frame], -240, -195, (canvas.width * 1.7), (canvas.height * 1.4)); 
 }
 
 //Navbar on scroll Activate
