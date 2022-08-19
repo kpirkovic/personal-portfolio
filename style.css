@@ -96,6 +96,7 @@ nav {
     height: 2.85rem;
     font-size: .9rem;
     z-index: 999;
+    -webkit-transform: translateZ(12px);
 }
 .hamburger-menu {
     display: none;
