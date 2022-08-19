@@ -104,7 +104,6 @@ tl.from(".anim-wrapper .laptop-wrapper , .anim-wrapper video, #anim-mobile, .ani
     delay: -.75
 })
 }
-
 const clientsTestimonials = gsap.timeline({
     scrollTrigger: {
         trigger: ".wrapper",
@@ -177,7 +176,7 @@ images[0].onload = render;
 
 function render() {
     context.clearRect(0, 0, canvas.width, canvas.height);
-    context.drawImage(images[laptop.frame], -240, -195, (canvas.width * 1.7), (canvas.height * 1.4)); 
+    context.drawImage(images[laptop.frame], -225, -187, (canvas.width * 1.67), (canvas.height * 1.37)); 
 }
 
 //Navbar on scroll Activate

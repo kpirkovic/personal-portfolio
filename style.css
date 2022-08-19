@@ -330,7 +330,6 @@ section button{
 }
 .laptop-wrapper {
     position: sticky;
-    perspective: 60rem;
     top: 27%;
     left: -10rem;
 }
@@ -376,7 +375,7 @@ section button{
 .client-name {
     position: absolute;
     left: clamp(26rem, 30vw, 30.5rem);
-    bottom: 40%;
+    bottom: 42%;
     border-radius: 4px;
     max-width: 18ch;
     padding: .7rem 1.2rem;
