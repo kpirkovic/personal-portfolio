@@ -70,6 +70,7 @@ if(window.matchMedia("(min-width: 850px)").matches) {
         delay: -.1,
         duration: .7,
     })
+    
 }
 tl.to(".loader", {
     opacity: -.2,
@@ -77,13 +78,6 @@ tl.to(".loader", {
     delay: .3,
     duration: 1,
     display:"none"
-})
-
-tl.from("nav", {
-    opacity: 0,
-    ease: "Power1.easeOut",
-    stagger: .15,
-    delay: -1
 })
 
 tl.from("#home p, #home .main-btn, #home h1", {

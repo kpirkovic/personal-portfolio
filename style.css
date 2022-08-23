@@ -730,8 +730,8 @@ section button{
         left: 70%;
         padding: .55rem .85rem;
     }
-    .loader-logo {
-        font-size: 2.5rem;
+    .loader {
+        display: none;
     }
     nav {
         height: 3.3rem;
