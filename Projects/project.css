@@ -226,6 +226,10 @@ section #head {
     display: flex;
     margin-block-start: 1.25rem;
 }
+.colors {
+    overflow: hidden;
+    border-radius: 2px;
+}
 .colors *{
     width: clamp(5.5rem, 15vw, 7.5rem);
     aspect-ratio: 2.5/1;
@@ -344,4 +348,7 @@ section #head {
 }
 .nunito {
     font-family: 'Nunito', sans-serif;
+}
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
 }
