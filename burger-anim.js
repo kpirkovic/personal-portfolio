@@ -71,3 +71,4 @@ window.addEventListener("resize", function (e) {
         isMobile = true;
     }
 });
+
