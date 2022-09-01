@@ -42,45 +42,39 @@
             </ul>
         </nav>
         <main class="container code-border" codeStart="<article>">
-            <section>
-                <iframe style="border: none; outline: none; border-radius: 7px; background-color: white; width: 100%; height: 80vh;" src="https://dizajn.netlify.app/"></iframe>
-            </section>
-            <section class="dprocess-section">
-                <div class="code-border cb-mobile content-wrapper" codeStart="<section>" codeEnd="</section>">
-                    <div class="dprocess-content">
-                        <h2>Workflow Process</h2>
-                        <p class="max-55ch">These are the stages I often follow while building a website. I start with the research phase and work through the design, development, testing, and delivery phases.</p>
+            <section id="showcase-section" class="p-end-two">
+                <div class="browser">
+                    <div class="browser-tab">
+                        <div class="browser-btns">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <a href="https://dizajn.netlify.app" target="_blank" class="browser-url"><img src="../assets/icons/lock.svg" alt="lock icon"> dizajn.mk</a>
+                        <span></span>
                     </div>
-                    <div class="grid-auto-cols">
-                        <div class="dprocess-blocks">
-                            <img src="../assets/icons/search-loading.svg" alt="Search Icon">
-                            <h5>Research</h5>
-                            <span class="dp-num">1</span>
-                        </div>
-                        <div class="dprocess-blocks">
-                            <img src="../assets/icons/layout.svg" alt="Wireframe Icon">
-                            <h5>Wireframe</h5>
-                            <span class="dp-num">2</span>
-                        </div>
-                        <div class="dprocess-blocks">
-                            <img src="../assets/icons/fluent-design.svg" alt="Design Icon">
-                            <h5>UX/UI Design</h5>
-                            <span class="dp-num">3</span>
-                        </div>
-                        <div class="dprocess-blocks">
-                            <img src="../assets/icons/user-testing.svg" alt="User Testing Icon">
-                            <h5>User Testing</h5>
-                            <span class="dp-num">4</span>
-                        </div>
-                        <div class="dprocess-blocks">
-                            <img src="../assets/icons/code.svg" alt="Search Icon">
-                            <h5>Development</h5>
-                            <span class="dp-num">5</span>
-                        </div>   
+                    <iframe src="https://dizajn.netlify.app"></iframe>
+                </div>
+                <div class="code-border cb-mobile content-wrapper cs-description" codeStart="<section>" codeEnd="</section>">
+                    <div class="desc-content">
+                        <h2>Dizjan.mk - HTML/CSS Project</h2>
+                        <p>
+                            Dizajn is a social media network with a blog-like interface designed for designers in Macedonia to share their knowledge of design, graphics, and software.
+                            <br><br>
+                            To complete my introduction to the coding course as part of my web design Bootcamp at SEDC, I was required to develop a project using solely HTML and CSS. Dribble, Behance, and a few other blogging platforms for design inspired the concept for this website.
+                            <br><br>
+                            It was incredibly enjoyable to work on this project. I tested the boundaries of what is possible only using CSS without utilizing JS, and I gained a lot of knowledge about HTML and CSS.
+                            <br><br>
+                            Note: Because this project does not contain any JavaScript, the filters on the live site are not functional.
+                        </p>
+                    </div>
+                    <div class="desc-buttons">
+                        <a href="#portfolio" role="button" class="ghost-btn">View Project</a>
+                        <a href="#portfolio" role="button" class="main-btn">View Live Site</a>
                     </div>
                 </div>
             </section>
-            <section class="persona-section three-cl-grid p-end-two">
+            <section class="persona-section p-end-two">
                 <div id="head" class="code-border cb-mobile span-row-2" codeStart="<section>" codeEnd="</section>">
                     <h2>User Persona</h2>
                     <p class="max-90">Based on the information obtained from talking with a few people, I created a persona representing an ideal user. 
@@ -89,7 +83,7 @@
                 </div>
                 <div class="persona span-row-4">
                     <div class="persona-info">
-                        <img class="persona-user" src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80" alt="Picture of a prospect">
+                        <img class="user-persona" src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80" alt="Picture of a prospect">
                         <div>
                             <h6><span class="text-blue text-semibold">Name:</span> Bojan Kmetovski</h6>
                             <h6><span class="text-blue text-semibold">Age:</span> 27 Years</h6>
@@ -117,7 +111,7 @@
                 </div>
                 <div class="persona span-row-4">
                     <div class="persona-info">
-                        <img class="persona-user" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80" alt="Picture of a prospect">
+                        <img class="user-persona" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80" alt="Picture of a prospect">
                         <div>
                             <h6><span class="text-blue">Name:</span> Bojan Kmetovski</h6>
                             <h6><span class="text-blue">Age:</span> 27 Years</h6>
@@ -154,11 +148,11 @@
                         <div class="style-colors">
                             <h5>Color Pallete</h5>
                             <div class="colors">
-                                <div class="c1"></div>
-                                <div class="c2"></div>
-                                <div class="c3"></div>
-                                <div class="c4"></div>
-                                <div class="c5"></div>
+                                <div style="background: lightblue;"></div>
+                                <div style="background: lightcoral;"></div>
+                                <div style="background: lightseagreen;"></div>
+                                <div style="background: cornflowerblue;"></div>
+                                <div style="background: crimson;"></div>
                             </div>
                         </div>
                     </div>
@@ -185,74 +179,6 @@
                 <a class="wireframe span-row-4"><img src="../assets/portfolio/dizajn/dizajn_wireframe_2.png" class="img-cover" alt="Site Image"></a>
                 <a class="wireframe span-row-3"><img src="../assets/portfolio/dizajn/dizajn_wireframe_4.png" class="img-cover" alt="Site Image"></a>
                 <a class="wireframe span-row-2"><img src="../assets/portfolio/dizajn/dizajn_wireframe_5.png" class="img-cover" alt="Site Image"></a>
-            </section>
-            <section class="unique-features-section">
-                <div id="head" class="code-border cb-mobile span-row-2" codeStart="<section>" codeEnd="</section>">
-                    <h2>Unique Features</h2>
-                    <ul>
-                        <li>A modern design with simple navigation, filters for articles, and a portfolio.</li>
-                        <li>Capability of setting up a user profile to share their work with clients and colleagues.</li>
-                        <li>Having the option to upload both portfolios and articles, as well as allowing brands to advertise.</li>
-                        <li>Filtering system to help viewers discover everything from articles, portfolios, and freelancers.</li>
-                    </ul>
-                </div>
-            </section>
-            <section class="user-testing-section">
-                <div class="code-border cb-mobile content-wrapper" codeStart="<section>" codeEnd="</section>">
-                    <div class="user-testing-content">
-                        <h2>User Testing</h2>
-                        <p class="max-55ch">When building a website, user testing is crucial since it allows you to observe how actual users interact with your product.
-                        <br><br>    
-                        Learning what they like and dislike can help us build better user experiences.    
-                        Here is some feedback I've got from my users.</p>
-                    </div>
-                    <div class="grid-auto-cols">
-                        <div class="user-blocks">
-                            <div>
-                                <span class="user-num">1</span>
-                            </div>
-                            <div>
-                                <h5>Damjan D.</h5>
-                                <p>
-                                    Likes the website's aesthetic and the concept of a social platform, but thinks that the logo doesn't fit the company's branding.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="user-blocks">
-                            <div>
-                                <span class="user-num">2</span>
-                            </div>
-                            <div>
-                                <h5>Kristifor P.</h5>
-                                <p>
-                                    Loves the visuals and typeface, and thinks the logo animation is cool but dislikes the lengthy duration of the animation.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="user-blocks">
-                            <div>
-                                <span class="user-num">3</span>
-                            </div>
-                            <div>
-                                <h5>Marija P.</h5>
-                                <p>
-                                    Absolutely loves the brand's colors and animations, but dislikes the way the ads are incorporated in the filters section.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="user-blocks">
-                            <div>
-                                <span class="user-num">4</span>
-                            </div>
-                            <div>
-                                <h5>Emilija T.</h5>
-                                <p>
-                                    She claims that the logo could be better and that the articles do not need to include more post recommendations.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </section>
             <section id="contact" class="contact-section">
                 <div class="code-border cb-mobile content-wrapper contact-wrapper" codeStart="<section>" codeEnd="</section>">

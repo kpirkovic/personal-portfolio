@@ -1,11 +1,94 @@
+main {
+    margin-block-start: 3.2rem;
+}
 .max-55ch {
     max-width: 55ch;
 }
-.hero-section p {
-    margin-block-start: .35rem;
+#showcase-section {
+    margin-block-start: 0;
 }
-.hero-section {
-    min-height: 60vh;
+.cs-description {
+    display: flex;
+    gap: 3rem;
+    margin-block-start: 5rem;
+    padding-inline-end: 0;
+}
+.desc-content {
+    width: 70%;
+}
+.desc-buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+.browser {
+    border-radius: 7px;
+    overflow: hidden;
+    width: 100%;
+}
+.browser iframe{
+    position: relative;
+    top: -.5rem;
+    border: none; 
+    outline: none; 
+    background-color: white;
+    width: 100%; 
+    height: 80vh;
+    border-radius: 0 0 7px 7px;
+    z-index: 1;
+}
+.browser-tab {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    padding: .5rem 1rem;
+    background-color: #191C1F;
+    z-index: 10;
+    align-items: center;
+}
+.browser-url {
+    background-color: #303235;
+    color: rgb(211, 211, 211);
+    width: 35%;
+    font-size: .87rem;
+    border-radius: 5px;
+    padding-block-start: .4rem;
+    padding-block-end: .25rem;
+    text-align: center;
+    text-decoration: none;
+}
+.browser-url img{
+    margin-inline-end: 5px;
+    vertical-align: -2px;
+    width: .6rem;
+}
+.browser-btns {
+    display: flex;
+    gap: .55rem;
+}
+.browser-btns span {
+    width: .62rem;
+    height: .62rem;
+    border-radius: 50%;
+    background-color: white;
+}
+.browser-btns span:nth-child(1) {
+    background-color: #CE5347;
+}
+.browser-btns span:nth-child(2) {
+    background-color: #F5BD4F;
+}
+.browser-btns span:nth-child(3) {
+    background-color: #61C454;
+}
+.persona-section {
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 1rem;
+    margin-block-start: 15rem;
 }
 .persona {
     padding-block-start: 2rem;
@@ -20,7 +103,7 @@
     gap: 2rem;
     align-items: center;
 }
-.persona-user {
+.user-persona {
     width: 6.5rem;
     aspect-ratio: 1/1;
     object-fit: cover;
@@ -48,31 +131,6 @@
 .persona-goals h6, .persona-frustrations h6 {
     margin-block-end: 1.4rem;
 }
-.three-cl-grid {
-    display: grid;
-    align-items: start;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
-    gap: 1rem;
-}
-.unique-features-section, .final-design-section , .dprocess-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
-}
-.unique-features-section {
-    min-height: 90vh;
-}
-.user-testing-section .grid-auto-cols {
-    margin-block-start: 3rem;
-}
-.final-design-section {
-    min-height: 130vh;
-}
-.portfolio-section {
-    margin-block-start: 0;
-}
 section #head {
     margin-block-end: 2rem;
     display: flex;
@@ -85,107 +143,6 @@ section #head {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     gap: 1rem;
 }
-.dprocess-section .grid-auto-cols{
-    margin-block-start: 3rem;
-}
-.dprocess-blocks {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1.5rem;
-    min-height: 12.5rem;
-    outline: 1px solid var(--scrollbar-color);
-    border-radius: 4px;
-    padding: clamp(1.5rem, 5vw, 2rem);
-    transition: background 300ms ease;
-    background-color: #10151D;
-}
-.dprocess-blocks img{
-    width: 2.8rem;
-}
-.dprocess-blocks h5{
-    font-weight: 500;
-}
-.dp-num {
-    position: absolute;
-    top: 2.5%;
-    right: 10%;
-    font-size: 5em;
-    color: var(--scrollbar-color);
-}
-.user-blocks {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-}
-.user-num {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1.5em;
-    aspect-ratio: 1/1;
-    font-size: 2.5rem;
-    color: white;
-    border-radius: 50%;
-    background-color: var(--accent-color);
-}
-.showcase-laptop {
-    position: relative;
-}
-.showcase-laptop img{
-    width: 100%;
-}
-.showcase-laptop video{
-    position: absolute;
-    top: 4%;
-    left: 51%;
-    transform: translateX(-50%);
-    width: 84%;
-    height: 82.5%;
-    object-fit: cover;
-    border-radius: 10px 0 10px 0;
-    z-index: -1;
-}
-.showcase-phone {
-    position: absolute;
-    right: 0%;
-    top: 46%;
-    transform: translateY(-50%);
-    z-index: 2;
-    width: clamp(5.5rem, 15vw, 14rem);
-}
-.showcase-phone img {
-    width: 100%;
-}
-.showcase-phone video {
-    position: absolute;
-    right: 50%;
-    top: 1%;
-    border-radius: clamp(5px, 5vw, 30px);
-    width: 95%;
-    height: 95%;
-    transform: translateX(50%);
-    object-fit: cover;
-    z-index: -1;
-}
-.hero-section header {
-    display: flex;
-    flex-direction: column;
-}
-.hero-content {
-    width: 40%;
-}
-.hero-content h1{
-    margin-block-end: 1rem;
-}
-.hero-wrapper {
-    position: absolute;
-    right: 2.5%;
-    top: -25%;
-    width: 60%;
-    height: fit-content;
-}
 .wireframe {
     position: relative;
     display: block;
@@ -194,7 +151,7 @@ section #head {
     cursor: pointer;
 }
 .style-section {
-    min-height: 70vh;
+    min-height: 50vh;
     margin-block-start: 5rem;
 }
 .style-section .content-wrapper {
@@ -235,24 +192,21 @@ section #head {
     aspect-ratio: 2.5/1;
     background-color: var(--scrollbar-color);
 }
-.c1 {
-    background-color: cornflowerblue;
-}
-.c2 {
-    background-color: crimson;
-}
-.c3 {
-    background-color: coral;
-}
-.c4 {
-    background-color: cyan;
+.contact-section {
+    min-height: 87vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
 }
 @media only screen and (max-width: 1360px)  {
-    .three-cl-grid {
+    main {
+        margin-block-start: 5.5rem;
+    }
+    .persona-section {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(1, auto-fill);
     }
-    .three-cl-grid #head {
+    .persona-section #head {
         grid-column: span 2;
     }
     .hero-content {
@@ -275,11 +229,26 @@ section #head {
         width: clamp(5.5rem, 20vw, 18rem);
     }
 }
+@media only screen and (max-width: 1000px)  {
+    .cs-description {
+        flex-direction: column;
+        gap: .5rem;
+    }
+}
 @media only screen and (max-width: 850px)  {
-    .three-cl-grid #head {
+    .desc-content {
+        width: 100%;
+    }
+    .cs-description {
+        margin-block-end: 10rem;
+    }
+    .browser iframe {
+        display: none;
+    }
+    .persona-section #head {
         grid-column: span 1;
     }
-    .three-cl-grid {
+    .persona-section {
         grid-template-columns: repeat(1, 1fr);
     }
     .wireframe {
