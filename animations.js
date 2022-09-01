@@ -37,7 +37,6 @@ ScrollTrigger.matchMedia({
         });
     })
 }})
-window.onload = function() {
 
 const textWrapper = document.querySelector('.loader-logo');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
@@ -49,6 +48,7 @@ if(window.matchMedia("(min-width: 850px)").matches) {
     tl.to(textWrapper, {
         opacity: 1,
         autoAlpha: 1,
+        delay: .3,
     })
 
     letters.forEach(letters => {
@@ -97,7 +97,6 @@ tl.from(".anim-wrapper .laptop-wrapper , .anim-wrapper video, #anim-mobile, .ani
     duration: .7,
     delay: -.75
 })
-}
 const clientsTestimonials = gsap.timeline({
     scrollTrigger: {
         trigger: ".wrapper",
