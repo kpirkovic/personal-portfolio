@@ -315,7 +315,7 @@ section button{
     position: absolute;
     top: calc(0% - 4rem);
     left: 30%;
-    width: 23rem;
+    width: 22.5rem;
 }
 #anim-mobile{
     filter: contrast(1.15);
