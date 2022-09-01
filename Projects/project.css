@@ -232,15 +232,14 @@ section #head {
 @media only screen and (max-width: 1000px)  {
     .cs-description {
         flex-direction: column;
+        margin-block-end: 10rem;
+        padding-block-end: 2rem;
         gap: .5rem;
     }
 }
 @media only screen and (max-width: 850px)  {
     .desc-content {
         width: 100%;
-    }
-    .cs-description {
-        margin-block-end: 10rem;
     }
     .browser iframe {
         display: none;
@@ -313,6 +312,23 @@ section #head {
     }
     .dp-num {
         right: 7%;
+    }
+    .desc-buttons {
+        flex-direction: column;
+    }
+    .desc-buttons .ghost-btn{
+        width: 100%;
+        text-align: center;
+    }
+    .browser-tab {
+        margin-block-start: 1rem;
+        padding: .5rem;
+    }
+    .browser-url{
+        width: 60%;
+    }
+    .empty{
+        display: none;
     }
 }
 .nunito {
