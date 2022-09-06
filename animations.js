@@ -3,7 +3,7 @@ gsap.config({
 });
 
 ScrollTrigger.matchMedia({
-	"(min-width: 1360px)": function() {
+	"(min-width: 1200px)": function() {
     gsap.to("#anim", {
     scrollTrigger: {
         trigger: ".wrapper",
@@ -151,7 +151,7 @@ for (let i = 0; i <= frameCount; i++) {
     images.push(img);
 }
 ScrollTrigger.matchMedia({
-	"(min-width: 1360px)": function() {
+	"(min-width: 1200px)": function() {
     gsap.to(laptop, {
         frame: frameCount - 1,
         snap: "frame",

@@ -590,19 +590,6 @@ section button{
     padding-inline-end: 2rem;
 }
 @media only screen and (max-width: 1360px) {
-    .anim-wrapper {
-        display: none;
-    }
-    .sections-wrapper {
-        max-width: 100%;
-    }
-    .anim-wrapper-mobile {
-        display: block;
-    }
-    .hero-section {
-        display: flex;
-        flex-direction: column;
-    }
     main {
         margin-block-start: 6rem;
         margin-inline: 1rem;
@@ -621,24 +608,6 @@ section button{
     }
     .logo-mobile {
         display: flex;
-    }
-    .laptop-wrapper-mobile {
-        display: block;
-        margin-block-start: 7rem;
-    }
-    .wrapper {
-        display: block;
-    }
-    .anim-wrapper-mobile {
-        align-self: flex-end;
-    }
-    .notification {
-        left: 0%;
-        top: -5%;
-    }
-    .client-name {
-        bottom: 45%;
-        left: 55%;
     }
     .nav-list {
         display: none;
@@ -671,11 +640,42 @@ section button{
     #testimonials {
         margin-block: 5rem;
     }
+    #laptop {
+        top: -2.6rem;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .anim-wrapper {
+        display: none;
+    }
+    .anim-wrapper-mobile {
+        display: block;
+        align-self: flex-end;
+    }
+    .sections-wrapper {
+        max-width: 100%;
+    }
+    .laptop-wrapper-mobile {
+        display: block;
+        margin-block-start: 7rem;
+    }
+    .wrapper {
+        display: block;
+    }
     #anim-mobile{
         width: 48%;
         top: -28%;
         left: 23%;
     }
+    .notification {
+        left: 0%;
+        top: -5%;
+    }
+    .client-name {
+        bottom: 45%;
+        left: 55%;
+    }
+=
 }
 @media only screen and (max-width: 850px) {
     .faq-wrapper, .contact-wrapper {
