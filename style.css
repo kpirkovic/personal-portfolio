@@ -15,6 +15,7 @@ html {
     --code-blue: #1C629D;
     --code-white: #85889A;
     --scrollbar-color: #333a44;
+    --sample-color: blue;
 }
 body {
     font-family: 'Poppins', sans-serif;
